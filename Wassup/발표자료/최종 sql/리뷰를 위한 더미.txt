@@ -1,0 +1,8 @@
+insert into menu values(MENU_SEQ.nextval,1,'메차쿠차','100','s56','3','맛있는 메차쿠차','오세요',null,null);
+insert into menu values(MENU_SEQ.nextval,3,'아키라라멘','100','s57','3','맛있는 아키라라멘','오세요',null,null);
+insert into menu values(MENU_SEQ.nextval,3,'스시야','100','s59','3','맛있는 스시야','오세요',null,null);
+insert into menu values(MENU_SEQ.nextval,3,'타코비','100','s60','3','맛있는 타코비','오세요',null,null);
+insert into menu values(MENU_SEQ.nextval,3,'오이시라멘','100','s61','3','맛있는 오이시라멘','오세요',null,null);
+insert into menu values(MENU_SEQ.nextval,3,'갓덴스시','100','s62','3','맛있는 갓덴스시','오세요',null,null);
+insert into menu values(MENU_SEQ.nextval,3,'돈부리','100','s63','3','맛있는 돈부리','오세요',null,null);
+insert into menu values(MENU_SEQ.nextval,3,'오코노미야','100','s64','3','맛있는 오코노미','오세요',null,null);
