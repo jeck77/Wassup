@@ -20,7 +20,7 @@
 	function paymentBtn() {
 		var total = ${total };
 		var price = $("#price").val();
-		if($("#coupon").val()=='5'){
+		if($("#coupon").val()=='신규가입 10%'){
 			total = total - (total*0.1);
 			price = price - (price*0.1);
 		}
@@ -388,7 +388,7 @@
                                         <select id="coupon" name="coupon">
                                             <option selected disabled>==쿠폰 선택==</option>
                                         <c:forEach items="${coupon }" var="coupon" varStatus="status">
-                                            <option value="${coupon.cCode }">${coupon.cName }</option>
+                                            <option value="${coupon.cName }">${coupon.cName }</option>
                                             </c:forEach>
                                         </select>
                                     </div>
