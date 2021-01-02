@@ -275,7 +275,7 @@
                         <div id="add_btn">
                            <form action="/lastorder/select">
                               <div id="add_lastorder">
-                                  <input type="submit" id="add" value="라스트오더 추가">
+                                  <input type="submit" id="add" value="라스트오더 추가요">
                               </div>
                            </form>
                         </div>
