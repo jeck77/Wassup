@@ -353,12 +353,12 @@ public class BuyerService {
 		return result;
 	}
 	
-	public int deleteCoupon(int cCode, String userCode) {
+	public int deleteCoupon(String cName, String userCode) {
 		int result= 0;
 		Connection conn = null;
 		try {
 			conn = factory.createConnection();
-			result = new BuyerDAO().deleteCoupon(conn, cCode, userCode);
+			result = new BuyerDAO().deleteCoupon(conn, cName, userCode);
 			if(result>0) {
 				JDBCTemplate.commit(conn);
 			} else {

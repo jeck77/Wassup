@@ -41,15 +41,15 @@ public class OrderServlet extends HttpServlet {
 		String userCode = ((Buyer)session.getAttribute("buyer")).getbCode();
 		
 		if(request.getParameter("coupon") != null) {
-			int cCode = Integer.parseInt(request.getParameter("coupon"));
-			int resultCoupon = new BuyerService().deleteCoupon(cCode, userCode);
+			String cName = request.getParameter("coupon");
+			int resultCoupon = new BuyerService().deleteCoupon(cName, userCode);
 		}
 		String truckName = request.getParameter("truckName");
 		
 		ArrayList<Order> order = new ArrayList<Order>();
 		int count = Integer.parseInt(request.getParameter("count"));
 		if(request.getParameter("coupon") != null){
-			if(Integer.parseInt(request.getParameter("coupon")) != 0) {
+			if(request.getParameter("coupon") != null) {
 				for(int i=0; i<count+1; i++) {
 					Order orderOne = new Order();
 					orderOne.setbId(((Buyer)session.getAttribute("buyer")).getbId());

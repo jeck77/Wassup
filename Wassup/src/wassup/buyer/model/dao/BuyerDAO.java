@@ -636,14 +636,14 @@ public class BuyerDAO {
 		return result;
 	}
 	
-	public int deleteCoupon(Connection conn, int cCode, String userCode) {
+	public int deleteCoupon(Connection conn, String cName, String userCode) {
 		int result = 0;
 		PreparedStatement pstmt = null;
-		String query = "DELETE FROM COUPON WHERE B_CODE=? AND C_CODE=?";
+		String query = "DELETE FROM COUPON WHERE B_CODE=? AND C_NAME=?";
 		try {
 			pstmt = conn.prepareStatement(query);
 			pstmt.setNString(1, userCode);
-			pstmt.setInt(2, cCode);
+			pstmt.setString(2, cName);
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

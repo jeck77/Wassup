@@ -38,10 +38,6 @@ request.setCharacterEncoding("utf-8");
 		HttpSession session = request.getSession();
 		String userCode = ((Buyer)session.getAttribute("buyer")).getbCode();
 		
-		if(request.getParameter("coupon") != null) {
-			int cCode = Integer.parseInt(request.getParameter("coupon"));
-			int resultCoupon = new BuyerService().deleteCoupon(cCode, userCode);
-		}
 		String truckName = request.getParameter("truckName");
 		
 		ArrayList<Order> order = new ArrayList<Order>();
